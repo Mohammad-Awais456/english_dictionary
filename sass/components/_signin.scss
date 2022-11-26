@@ -1,0 +1,50 @@
+#sign_in_form{
+
+    @include flex(flex-start,center,column,nowrap);
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 50rem;
+    h1{
+        text-align: center;
+        word-break: break-all;
+        margin-bottom: 2.5rem;
+    }
+    input{
+        margin: 1.5rem 0;
+        background-color: $p1;
+        padding: 2rem 1rem;
+        border-radius: 2rem;
+        border: none;
+        outline: none;
+        color: $p3;
+        width: 100%;
+       
+    }
+    #sign_in_submit_btn{
+        color: $p3;
+        max-width: 20rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+.login_container{
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    @include flex(center,center,row,nowrap);
+}
+
+
+.back_to_home{
+    position: fixed;
+    top: 2rem;
+    left:2rem;
+      background-color: $p1;
+    
+    border-radius: 5rem;
+        padding: 2rem;
+        h5{
+            color: $p3; 
+
+        }
+}

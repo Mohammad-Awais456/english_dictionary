@@ -1,0 +1,29 @@
+{{>header}}
+<div class="main_container">
+
+     <div class="profile {{profile_cond}} " >
+        <h3><i class="far fa-user-circle"></i> {{name}}</h3>
+     </div>
+
+    <div class="inner_container home_page_inner" style="padding: 0 2rem;">
+        <h1>English NoteBook📑</h1>
+
+        <button id="view_dictionay_button" class="hover">View Dictionary</button>
+        <button id="add_new_word_btn" class="hover {{new_btn_conditoin}}">Add New Word</button>
+        <button class="hover {{sign_btn_cond}}" onclick="(()=>{location.href='/login'})();" >Sign In</button>
+        <button id="sign_out_button" class="hover danger_btn {{logout_btn_cond}}"   >Sign Out</button>
+
+    </div>
+
+    {{>dictionary}}
+    {{>add_new_word}}
+
+
+  <div id="condition_for_login" target="{{condition_for_login}}"></div>
+  <div id="condition_for_admin_login" target="{{admin_login}}"></div>
+
+</div>  
+
+
+
+{{>footer}}
